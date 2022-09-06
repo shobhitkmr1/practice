@@ -1,5 +1,5 @@
-const { writeFileSync } = require('fs');
 const http = require('http');
 http.createServer((req,res)=>{
-    writeFileSync("hello world");
+    res.write("hello    world");
+    res.end();
 }).listen(3000);
